@@ -40,8 +40,13 @@ basicCN + geom_boxplot()
 Based on the box plot, people who sit in the back tend to consume more alcohol per week, than those who sit in the front and middle.
 
 
-## Numerical Summarys 
-
+## Numerical Summarys
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+  
+Based on the numerical summary, people who sit in the back had a mean of 8.5 drinks a week compared to people who sat in the middle,who only had 3.3 drinks per week, and those who sat in the front drink 1.78 drinks per week.
+  
 ## Inferential Tests
 
 ## Conclusions
