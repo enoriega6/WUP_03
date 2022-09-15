@@ -20,6 +20,11 @@ $H_0$: There is no difference between the average number of drinks imbibed betwe
 
 $H_A$: The average number drinks is different between at least two rows. 
 ## Now with ggplot - first select the basic data
+##methods
+Seat is a categorical variable.
+Alcohol is a numerical variable.
+For this problem we explain alcohol consumption, based on where people sit.  
+Therefore the helper file is Numerical, categorical.
 
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
