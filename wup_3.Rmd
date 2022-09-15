@@ -16,16 +16,17 @@ davisdata <- read.csv(file="UCDavis.csv")
 ```
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
-$H_0$: There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in. 
-
-$H_A$: The average number drinks is different between at least two rows. 
+ 
 ## Now with ggplot - first select the basic data
 ##methods
 Seat is a categorical variable.
 Alcohol is a numerical variable.
 For this problem we explain alcohol consumption, based on where people sit.  
-Therefore the helper file is Numerical, categorical.
+Therefore the helper file is Numerical, categorical.  
 
+$H_0$: There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in. 
+
+$H_A$: The average number drinks is different between at least two rows.
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
