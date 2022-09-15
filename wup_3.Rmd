@@ -18,7 +18,8 @@ davisdata <- read.csv(file="UCDavis.csv")
 ## you choose to sit in??
  
 ## Now with ggplot - first select the basic data
-##methods
+##  
+methods
 Seat is a categorical variable.
 Alcohol is a numerical variable.
 For this problem we explain alcohol consumption, based on where people sit.  
