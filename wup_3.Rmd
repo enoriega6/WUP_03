@@ -54,6 +54,12 @@ summary.aov(model1)
 ```
 Based on the ANOVA, the P value is 0.000116 which less than 0.05, therefore the null hypothesis is rejected.
 
+```{r}
+plot(TukeyHSD(model1))
+```
+
+
+
 ## Conclusions
-the P value is 0.000116 which less than 0.05, therefore the null hypothesis is rejected. There is a difference in the number of alcohol drinks consumed per week. People who drink an average of 8.5 drinks a week, are the ones who would sit in the back. Those sat in the front only drink an average of 1.78 drinks a week. And, those who occupy the middle seats drink more than the then people who sit in the from, averaging 3.3 drinks a week.
+the P value is 0.000116 which less than 0.05, therefore the null hypothesis is rejected. There is a difference in the number of alcohol drinks consumed per week. People who drink an average of 8.5 drinks a week, are the ones who would sit in the back. Those sat in the front only drink an average of 1.78 drinks a week. And, those who occupy the middle seats drink more than the then people who sit in the from, averaging 3.3 drinks a week. Further, per the Tukey model
 
