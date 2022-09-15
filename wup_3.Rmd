@@ -47,8 +47,13 @@ favstats(alcohol~Seat,data=ucdavis1)
   
 Based on the numerical summary, people who sit in the back had a mean of 8.5 drinks a week compared to people who sat in the middle,who only had 3.3 drinks per week, and those who sat in the front drink 1.78 drinks per week.
   
-## Inferential Tests
+## Inferential Tests 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+Based on the ANOVA, the P value is 0.000116 which less than 0.05, therefore the null hypothesis is rejected.
 
 ## Conclusions
-
+the P value is 0.000116 which less than 0.05, therefore the null hypothesis is rejected. There is a difference in the number of alcohol drinks consumed per week. People who drink an average of 8.5 drinks a week, are the ones who would sit in the back. Those sat in the front only drink an average of 1.78 drinks a week. And, those who occupy the middle seats drink more than the then people who sit in the from, averaging 3.3 drinks a week.
 
